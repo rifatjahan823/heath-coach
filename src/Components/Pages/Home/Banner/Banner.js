@@ -11,9 +11,9 @@ const Banner = () => {
       setIndex(selectedIndex);
     };
     return (
-            <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-        <img style={{position:"relative"}}
+            <Carousel style={{position:"relative",zIndex:"-5"}} activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item >
+        <img 
           className="d-block w-100"
           src={ slider1bg}
           alt="First slide"
