@@ -1,17 +1,23 @@
-import React, { useRef } from 'react';
-import { Button, Form, ToastContainer } from 'react-bootstrap';
+import React, { useRef, useState } from 'react';
+import { Button, Form} from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../../firebase.init';
 import Loading from '../Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
-    const emailref= useRef('');
-    const passwordref= useRef('');
-
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const handleEmail =(event)=>{
+        setEmail(event.target.value)
+    };
+    const handlePassword =(event)=>{
+        setPassword(event.target.value)
+    };
     const [
         signInWithEmailAndPassword,
         user,
@@ -21,14 +27,10 @@ const Login = () => {
       const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
       auth
       );
-
-    const submit = event=>{
+      const submit = event=>{
         event.preventDefault();
-        const email = emailref.current.value;
-        const password = passwordref.current.value;
-        signInWithEmailAndPassword(email, password)
+        signInWithEmailAndPassword(email, password);
     }
- 
     const navigate = useNavigate();
 
     const location = useLocation();
@@ -42,7 +44,6 @@ if (sending) {
     return <Loading></Loading>;
   }
   const resetPassword = async ()=>{
-    const email = emailref.current.value;
    if(user){
     await sendPasswordResetEmail(email);
     toast('Sent email');
@@ -51,19 +52,19 @@ if (sending) {
     toast('user not found');  
    }
   }
- 
+
     return (
         <div className='container w-50 mx-auto'>
         <h2 className='text-center text-primary mt-2'>Please Login</h2>
         <Form onSubmit={submit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control ref={emailref} type="email" placeholder="Enter email" required/>
+                <Form.Control onBlur={handleEmail} type="email" placeholder="Enter email" required/>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control ref={passwordref} type="password" placeholder="Password" required/>
+                <Form.Control onBlur={handlePassword} type="password" placeholder="Password" required/>
             </Form.Group>
             {
                 error?.message  && <p>{error.message}</p>
@@ -80,10 +81,17 @@ if (sending) {
             </Button>
         </Form>
         <p>New to here? <Link to="/register" className="text-danger pe-auto text-decoration-none">Please Registre</Link></p>
-
-        <p>Forget Password? <Link to="" className="text-danger pe-auto text-decoration-none"   onClick={resetPassword}>Reset Password</Link></p>
-        <SocialLogin></SocialLogin>
-        <ToastContainer />
+        
+        <p>Forget Password? <Link to="" className="text-danger pe-auto text-decoration-none"   onClick={async () => {
+        if(email){
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }else{
+            toast('plese enter your email'); 
+        }
+        }}>Reset Password</Link></p>
+            <SocialLogin></SocialLogin>
+            <ToastContainer />
     </div>
     );
 };

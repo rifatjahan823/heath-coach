@@ -44,7 +44,7 @@ const navigate=useNavigate();
   }
     return (
         <div className='container w-50 mx-auto'>
-        <h2 className='text-center text-primary mt-2'>Please Login</h2>
+        <h2 className='text-center text-primary mt-2'>Register</h2>
         <Form onSubmit={registar}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
@@ -63,7 +63,7 @@ const navigate=useNavigate();
                Register
             </Button>
         </Form>
-        <p>New to here? <Link to="/login" className="text-danger pe-auto text-decoration-none">Please Registre</Link></p>
+        <p>Already have an account? <Link to="/login" className="text-danger pe-auto text-decoration-none">Please Login</Link></p>
         <SocialLogin></SocialLogin>
     </div>
     );
