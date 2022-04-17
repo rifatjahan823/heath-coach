@@ -11,6 +11,7 @@ import NotFound from './Components/Pages/NotFound/NotFound';
 
 import CheckOut from './Components/Pages/CheckOut/CheckOut';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
+import Footer from './Components/Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/register" element={<Register></Register>} />
           <Route path="*" element={<NotFound></NotFound>} />
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

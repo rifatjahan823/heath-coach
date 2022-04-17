@@ -73,7 +73,7 @@ if (sending) {
         </Form>
         <p>New to here? <Link to="/register" className="text-danger pe-auto text-decoration-none">Please Registre</Link></p>
         
-        <p>Forget Password? <Link to="" className="text-danger pe-auto text-decoration-none"   onClick={async () => {
+        <p>Forget Password? <Link to="" className="text-danger pe-auto text-decoration-none" onClick={async () => {
         if(email){
             await sendPasswordResetEmail(email);
             toast('Sent email');
