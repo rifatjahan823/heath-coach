@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div>
-            <div className='footer pb-5'>
+            <div className='footer py-5'>
             <div className='container'>
                 <div className='row  g-4'>
                     <div className='col-lg-4 col-md-6 col-sm-12 me-lg-5'>
@@ -28,7 +28,6 @@ const Footer = () => {
                         <ul className='list-unstyled pages'>
                         <Link className='text-decoration-none' to="/"> <li ><FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon> Home</li></Link>
                         <Link className='text-decoration-none' to="/about"> <li><FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon> About</li></Link>
-                        <Link className='text-decoration-none' to="/service"><li><FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon> Service</li></Link>
                         <Link className='text-decoration-none' to="/blog"> <li ><FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon> Blog</li></Link>
                         </ul>
                     </div>

@@ -1,40 +1,52 @@
 import React from 'react';
 import'./AboutService.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLeaf,faAppleAlt,faSocks,faHourglass,faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faLeaf,faAppleAlt,faSocks,faHourglass,faHeart,faEllipsisH } from '@fortawesome/free-solid-svg-icons'
+import croppedfavicon from'../../../../Image/cropped-favicon.png'
 const AboutService = () => {
     return (
         <div className='container AboutService-section'>
-            <div className='divider'></div>
-           <h2>Why people need a Health Coach</h2> 
-            <FontAwesomeIcon className='mb-5 icon ' icon={faLeaf} />
+           <h2 className='mb-5'>Why people need a Health Coach</h2> 
+           <img src={croppedfavicon} alt="" />
            <div className='row'>
                 <div className='col-lg-3 colo-md-6 col-sm-12'>
                     <div className='info-box'>
                     <FontAwesomeIcon className='icon' icon={faAppleAlt} />
                     <h3>Nutrition Strategies</h3>
+                    <FontAwesomeIcon className='icon2' icon={faEllipsisH}></FontAwesomeIcon>
+                    <div className='overlay'>
                     <p>Healthy diet for body as well as for mind.</p>
+                    </div>
                     </div>
                 </div>
                 <div className='col-lg-3 colo-md-6 col-sm-12'>
                     <div className='info-box'>
                         <FontAwesomeIcon className='icon' icon={faSocks}></FontAwesomeIcon>
                     <h3>Workout Routines</h3>
+                    <FontAwesomeIcon className='icon2' icon={faEllipsisH}></FontAwesomeIcon>
+                    <div className='overlay'>
                     <p>Taking care of your body is important.</p>
+                    </div>
                     </div>
                 </div>
                 <div className='col-lg-3 colo-md-6 col-sm-12'>
                    <div className='info-box'>
                    <FontAwesomeIcon className='icon' icon={faHourglass} />
                    <h3>Individual Support</h3>
+                   <FontAwesomeIcon className='icon2' icon={faEllipsisH}></FontAwesomeIcon>
+                   <div className='overlay'>
                    <p>More of a friend than a health coach.</p>
+                   </div>
                    </div>
                 </div>
                 <div className='col-lg-3 colo-md-6 col-sm-12'>
                   <div className='info-box'>
-                  <FontAwesomeIcon className='icon' icon={faHeart } />
+                  <FontAwesomeIcon  className='icon' icon={faHeart } />
                   <h3>First-Hand Advice</h3>
-                  <p>Broad experience is always a bonus.</p>
+                  <FontAwesomeIcon className='icon2' icon={faEllipsisH}></FontAwesomeIcon>
+                 <div className='overlay'>
+                 <p>Broad experience is always a bonus.</p>
+                 </div>
                   </div>
                 </div>
            </div>

@@ -2,16 +2,18 @@ import React, { useState } from 'react';
 import {Carousel } from 'react-bootstrap';
 import slider1bg from '../../../../Image/slide-1-bg.jpg';
 import slider1img from '../../../../Image/slide-1-img.png'
-import slider2 from '../../../../Image/slider-2.jpg'
+import slider2 from '../../../../Image/slider-2.jpg';
+import  './Banner.css';
 
 const Banner = () => {
-    const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };
     return (
-            <Carousel style={{position:"relative",zIndex:"-5"}} activeIndex={index} onSelect={handleSelect}>
+     <div>
+        <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item >
         <img 
           className="d-block w-100"
@@ -19,19 +21,20 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption>
+       <div className='d-flex'>
        <div>
-           <div className='d-flex me-5'>
-           <img style={{width:"100%",position:"absolute",bottom:"-250%",right:"45%"}}  src={slider1img} alt="" />
+           <img  style={{position:"absolute",bottom:"0%",left:"-50%",width:"85%"}} src={slider1img} alt="" />
            </div>
-           <div style={{position:"absolute",top:"-900%",right:"20%"}} >
+           <div style={{position:"absolute",left:"28%",marginTop:"-50%"}}>
                <h1>hi i'm rifat jahan </h1>
                <p>your new personal coach for better life!</p>
                <button>About me</button>
            </div>
+  
        </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item >
         <img
           className="d-block w-100"
           src={slider2}
@@ -39,16 +42,23 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-            <div style={{position:"absolute",top:"-800%",right:"40%"}} >
+            <div>
+               <div className='mb-lg-5 pb-lg-3'>
                <h1>hi i'm rifat jahan </h1>
                <p>your new personal coach for better life!</p>
                <button>About me</button>
+               </div>
+               <div className='mb-lg-5 pb-lg-5 mb-md-5 pb-md-5 mb-sm-5'>
+
+               </div>
            </div>
 
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+     </div>
     );
+    
 };
 
 export default Banner;

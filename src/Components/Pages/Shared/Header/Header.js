@@ -22,7 +22,6 @@ const Header = () => {
             <Nav className="mx-auto">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link href='/about' >About</Nav.Link>
-              <Nav.Link href='/services'>Services</Nav.Link>
               <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
               <Nav.Link as={Link} to="/checkout"></Nav.Link>
             </Nav>
