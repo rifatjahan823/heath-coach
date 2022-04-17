@@ -51,9 +51,7 @@ if (sending) {
     toast('user not found');  
    }
   }
-    const navigateRegister = event=>{
-            navigate('/register')
-    }
+ 
     return (
         <div className='container w-50 mx-auto'>
         <h2 className='text-center text-primary mt-2'>Please Login</h2>
@@ -81,7 +79,7 @@ if (sending) {
                 Login
             </Button>
         </Form>
-        <p>New to here? <Link to="/register" className="text-danger pe-auto text-decoration-none" onClick={ navigateRegister}>Please Registre</Link></p>
+        <p>New to here? <Link to="/register" className="text-danger pe-auto text-decoration-none">Please Registre</Link></p>
 
         <p>Forget Password? <Link to="" className="text-danger pe-auto text-decoration-none"   onClick={resetPassword}>Reset Password</Link></p>
         <SocialLogin></SocialLogin>
