@@ -1,0 +1,38 @@
+[
+    {
+      "id": "1",
+      "picture": "https://i.ibb.co/7Xr5D6X/service-1.jpg",
+      "name": "Personalized Nutrition Plan",
+      "description": "After a thorough analysis and research of your health and physical condition and also of your needs, I`ll be able to compose a detailed day-to-day programme of exercises with the number of hours to spend on required body areas. With this plan you`ll be able to do your exercises effectively even without personal trainer`s supervision."
+    },
+    {
+      "id": "2",
+      "picture": "https://i.ibb.co/vX0QgRs/service-2.jpg",
+      "name": "Personalized Exercise Program",
+      "description": "After a thorough analysis and research of your health and physical condition and also of your needs, I`ll be able to compose a detailed day-to-day programme of exercises with the number of hours to spend on required body areas. With this plan you`ll be able to do your exercises effectively even without personal trainer`s supervision."
+    },
+    {
+      "id": "3",
+      "picture": "https://i.ibb.co/y48Xtwp/service-3.jpg",
+      "name": "Individual Routine Program",
+      "description": ""
+    },
+    {
+      "id": "4",
+      "picture": "https://i.ibb.co/7Xr5D6X/service-1.jpg",
+      "name": "Wilson Paul",
+      "description": ""
+    },
+    {
+      "id": "5",
+      "picture": "https://i.ibb.co/7Xr5D6X/service-1.jpg",
+      "name": "Darlene Gonzales",
+      "description": ""
+    },
+    {
+      "id": "6",
+      "picture": "https://i.ibb.co/7Xr5D6X/service-1.jpg",
+      "name": "Darlene Gonzales",
+      "description": ""
+    }
+  ]

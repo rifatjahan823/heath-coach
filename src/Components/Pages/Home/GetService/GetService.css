@@ -1,0 +1,22 @@
+.services-info{
+    background-color: white;
+    text-align: center;
+    position: relative;
+    height: 520px;
+}
+.services-info h5{
+    color:#444444;
+   font-size: 22px;
+}
+.services-info p{
+    color:#888888;
+   font-size: 14px;
+   padding: 0 15px;
+}
+.services-btn button{
+    position: absolute;
+    left: 40%;
+   bottom: 20px;
+   border: 0;
+   background-color: #2acd35;
+}

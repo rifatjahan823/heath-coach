@@ -38,7 +38,7 @@ const AboutService = () => {
                   </div>
                 </div>
            </div>
-           <div className='mt-5'>
+           <div className='m-5 pb-5'>
          <p>  I am delighted to be able to share with you the techniques I have learnt over the years <br /> that have brought me much happiness and success.</p>
            </div>
            <div className='divider2'></div>
