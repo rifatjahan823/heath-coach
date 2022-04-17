@@ -43,7 +43,7 @@ const navigate=useNavigate();
     }
   }
     return (
-        <div className='container w-50 mx-auto'>
+        <div className='container w-50 mx-auto pb-5'>
         <h2 className='text-center text-primary mt-2'>Register</h2>
         <Form onSubmit={registar}>
             <Form.Group className="mb-3" controlId="formBasicEmail">

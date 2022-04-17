@@ -4,8 +4,9 @@ const Info = () => {
     return (
         <div className='info'style={{backgroundImage: `url(${infoblockbg})`, backgroundRepeat: "no-repeat",
         backgroundAttachment: 'fixed',
+        backgroundSize:"cover",
         padding:"120px 0", 
-        backgroundPosition:"center",
+        backgroundPosition:"center center",
        }}>
          <div className='container '>
          <div className='text-white w-50'>

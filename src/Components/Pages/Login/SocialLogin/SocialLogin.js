@@ -23,7 +23,7 @@ const SocialLogin = () => {
         navigate ('/')
       }
     return (
-        <div>
+        <div className='mb-5'>
             <div className='d-flex align-items-center'>
                 <div style={{height:"1px"}} className='bg-primary w-50'></div>
                 <p className='mx-2 mt-2'>or</p>
