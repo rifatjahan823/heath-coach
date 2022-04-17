@@ -43,15 +43,6 @@ if(user){
 if (sending) {
     return <Loading></Loading>;
   }
-  const resetPassword = async ()=>{
-   if(user){
-    await sendPasswordResetEmail(email);
-    toast('Sent email');
-   }
-   else{
-    toast('user not found');  
-   }
-  }
 
     return (
         <div className='container w-50 mx-auto'>
