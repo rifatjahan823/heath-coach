@@ -3,4 +3,10 @@
     margin-top: 1%;
     margin-bottom: 2%;
     box-shadow: 5px 5px 5px 5px #2acd35;
+    width:50%;
+}
+@media  only screen and (max-width: 576px) {
+    .form-container{
+        width:100%;
+    }
 }

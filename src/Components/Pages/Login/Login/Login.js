@@ -50,7 +50,7 @@ if(sending){
 
 
     return (
-        <div className='container w-50 mx-auto pb-5 form-container'>
+        <div className='container mx-auto pb-5 form-container'>
         <h2 className='text-center  mt-2'>Please Login</h2>
         <Form onSubmit={submit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">

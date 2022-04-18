@@ -31,7 +31,7 @@ const CheckOut = () => {
 
 
     return (
-        <div className='container mx-auto pb-5 form-container'style={{width:"50%"}}>
+        <div className='container mx-auto pb-5 form-container'>
         <h2 className='text-center  mt-2'>Please Check Out</h2>
         <Form onSubmit={loginHandle}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
