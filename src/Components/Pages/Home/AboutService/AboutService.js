@@ -9,6 +9,7 @@ const AboutService = () => {
            <h2 className='mb-5'>Why people need a Health Coach</h2> 
            <img src={croppedfavicon} alt="" />
            <div className='row'>
+         {/* ---first info-box ---*/}
                 <div className='col-lg-3 col-md-6 col-sm-12'>
                     <div className='info-box'>
                     <FontAwesomeIcon className='icon' icon={faAppleAlt} />
@@ -19,6 +20,7 @@ const AboutService = () => {
                     </div>
                     </div>
                 </div>
+            {/* ---second info-box---- */}
                 <div className='col-lg-3 col-md-6 col-sm-12'>
                     <div className='info-box'>
                         <FontAwesomeIcon className='icon' icon={faSocks}></FontAwesomeIcon>
@@ -29,6 +31,7 @@ const AboutService = () => {
                     </div>
                     </div>
                 </div>
+             {/*---- third info-box---- */}
                 <div className='col-lg-3 col-md-6 col-sm-12'>
                    <div className='info-box'>
                    <FontAwesomeIcon className='icon' icon={faHourglass} />
@@ -39,6 +42,7 @@ const AboutService = () => {
                    </div>
                    </div>
                 </div>
+            {/* ---fourth info-box---- */}
                 <div className='col-lg-3 col-md-6 col-sm-12'>
                   <div className='info-box'>
                   <FontAwesomeIcon  className='icon' icon={faHeart } />

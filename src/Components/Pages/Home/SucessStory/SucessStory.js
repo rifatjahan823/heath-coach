@@ -33,6 +33,7 @@ const SucessStory = () => {
                 </div>
               </div>
             </div>
+           {/* sucess story description part  */}
             <div className='col-md-6 col-sm-12'>
                 <h2  style={{color:"#2acd35"}}>Secret Tips </h2>
                 <p className='mt-3 mb-4' >When it comes to weight loss, exercise is your best friend. If you haven’t exercised for a long time and are very out of shape, start out by exercising for just 10 minutes a day, and add on over time to build up to 30 minutes to an hour every day. Do both aerobic exercise (like walking, swimming, and cycling) and anaerobic exercise (resistance training, weight lifting) for best results. Aerobic exercise has many benefits: it improves insulin sensitivity, strengthens your heart, gives you more energy, and much more. </p>

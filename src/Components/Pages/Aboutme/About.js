@@ -18,12 +18,12 @@ const About = () => {
                    <button className='about-btn2 text-uppercase'>get cv</button>
                 </div>
                 <div className='col-md-4 col-sm-12 '>
-                <img className='float-end' style={{width:"100%"}} src={image1} alt="" />
+                <img className='float-end' style={{width:"100%"}} src={image2} alt="" />
                 </div>
             </div>
             <div className='row align-items-center'>
                 <div className='col-md-5 col-sm-12'>
-                <img className='float-start' style={{width:"90%"}}  src={image2 } alt="" />
+                <img className='float-start' style={{width:"90%"}}  src={image1 } alt="" />
                 </div>
                 <div className='col-md-7 col-sm-12'>
                     <h2 className='text-uppercase fw-bold'>let's <br /> know about<br /> my goal</h2>
