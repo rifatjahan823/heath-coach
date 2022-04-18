@@ -12,7 +12,7 @@ const Register = () => {
     const[confirmPassword,setConfirmPassword]=useState('')
     const[error,setError]=useState('');
 
-   const [ createUserWithEmailAndPassword,user,loading]=useCreateUserWithEmailAndPassword(auth,{ emailVerification: true });
+   const [ createUserWithEmailAndPassword,user,loading]=useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true });
 
     const handleEmail =(event)=>{
       setEmail(event.target.value)
@@ -50,7 +50,7 @@ const navigate=useNavigate();
   }
     return (
         <div className='container mx-auto pb-5 form-container'>
-        <h2 className='text-center  mt-2'>Register</h2>
+        <h2 className='text-center  mt-2'>Please Registration</h2>
         <Form onSubmit={registar}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>

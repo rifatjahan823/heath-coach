@@ -3,36 +3,42 @@
       "id": "1",
       "picture": "https://i.ibb.co/7Xr5D6X/service-1.jpg",
       "name": "Personalized Nutrition Plan",
-      "description": "Personalized nutrition is defined as the creation of an eating plan with dietary recommendations designed specifically for your body and lifestyle.Everyone has heard of popular nutrition styles: the keto diet, the Atkins diet, paleo, etc. Many are just different varieties of the same kind of low-carbohydrate diet, an eating style that emphasizes consuming fats instead of carbs. "
+      "price":49,
+      "description": "Personalized nutrition is defined as the creation of an eating plan with dietary recommendations designed specifically for your body and lifestyle.Everyone has heard of popular nutrition styles: the keto diet, the Atkins diet, paleo, etc. Many are just different varieties of the same kind of low-carbohydrate diet. "
     },
     {
       "id": "2",
       "picture": "https://i.ibb.co/vX0QgRs/service-2.jpg",
       "name": "Personalized Exercise Program",
+      "price":55,
       "description": "After a thorough analysis and research of your health and physical condition and also of your needs, I`ll be able to compose a detailed day-to-day programme of exercises with the number of hours to spend on required body areas. With this plan you`ll be able to do your exercises effectively even without personal trainer`s supervision."
     },
     {
       "id": "3",
       "picture": "https://i.ibb.co/y48Xtwp/service-3.jpg",
       "name": "Individual Routine Program",
+      "price":40,
       "description": "Our one-on-one health coaching is an incredibly effective tool to identify, enact and sustain improvements in your life.No matter which at-home workout you pick,Just start With Me Your Plane.I'm Always For Your Help.Routine Is The Most Important Everyboy Life.So Not Thing To Much Start Your Plane Now"
     },
     {
       "id": "4",
       "picture": "https://i.ibb.co/7Xr5D6X/service-1.jpg",
       "name": "Personalized About First Aid",
+      "price":60,
       "description": "First aid is the first and immediate assistance given to any person suffering from either a minor or serious illness or injury, with care provided to preserve life, prevent the condition from worsening, or to promote recovery.What is importance of first aid? It gives you tools to prevent the situation from becoming worse. "
     },
     {
       "id": "5",
       "picture": "https://i.ibb.co/7Xr5D6X/service-1.jpg",
       "name": "Personalized Child Helth",
+      "price":65,
       "description": "A person’s health is dependent upon the interaction of one’s biologic attributes with one’s social and physical environments. The purpose of this commentary is to provide our collective opinion about how integration of biologic and social determinants of health in pregnancy can lead to “personalized” care and improved outcomes for the mother and her baby"
     },
     {
       "id": "6",
       "picture": "https://i.ibb.co/7Xr5D6X/service-1.jpg",
       "name": "Personalized Pet Helth",
+      "price":35,
       "description": "As a nation we are obsessed with our pets (in a good way of course) which explains why we love to talk about them. The number of pet bloggers is rising every year which presents an opportunity to share information, chat and even meet up for dog walks, social events and competitions."
     }
   ]

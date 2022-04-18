@@ -19,7 +19,7 @@ const Header = () => {
          <Navbar.Brand as={Link} to="/" style={{width:"50%"}}>
         <img style={{width:"50%",marginTop:"-20px"}} src={logo} alt="" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav"style={{marginRight:"4%"}} />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"style={{marginRight:"%"}} />
            <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
@@ -28,16 +28,16 @@ const Header = () => {
               <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
               <Nav.Link as={Link} to="/checkout"></Nav.Link>
             </Nav>
-            <Nav>
+            <div className='d-flex login'>
             {
                user?
-               <Nav.Link onClick={signout} as={Link} to="/" >Login</Nav.Link>
+               <Link onClick={signout} as={Link} to="" >Sign Out</Link>
              
               : 
-              <Nav.Link as={Link} to="/login">Login</Nav.Link>
+              <Link as={Link} to="/login">Login</Link>
             }
-              <Nav.Link as={Link} to="/register">Register</Nav.Link>
-            </Nav>
+              <Link as={Link} to="/register">Registration</Link>
+            </div>
            </Navbar.Collapse>
          </Container>
        </Navbar>

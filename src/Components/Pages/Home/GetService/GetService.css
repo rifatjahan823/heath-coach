@@ -2,7 +2,7 @@
     background-color: white;
     text-align: center;
     position: relative;
-    height: 570px;
+    height: 600px;
 }
 .services-info h5{
     color:#444444;
@@ -15,7 +15,7 @@
 }
 .services-btn button{
     position: absolute;
-    left:32%;
+    left:30%;
    bottom: 15px;
    border: 0;
    background-color: #2acd35;
@@ -32,4 +32,11 @@
     background-color: transparent;
     color:#2acd35;
 }
-  
+  .price{
+    position: absolute;
+    left:35%;
+     bottom: 70px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+      font-weight:500;
+  }
