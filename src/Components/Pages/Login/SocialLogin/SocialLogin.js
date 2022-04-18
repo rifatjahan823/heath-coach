@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import google from '../../../../Image/social/google-icon-logo.png'
 import {  useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../../firebase.init';
@@ -15,13 +15,17 @@ const SocialLogin = () => {
             <p>Error: {error?.message}</p>
           </div>
       }
+      useEffect(()=>{
+        if(user ){
+          navigate ('/')
+        }
+       },[user])
+       
       if (loading ) {
         return <Loading></Loading>;
       }
-
-      if(user ){
-        navigate ('/')
-      }
+    
+   
     return (
         <div className='mb-5'>
             <div className='d-flex align-items-center'>

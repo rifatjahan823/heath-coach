@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button, Form} from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -36,10 +36,12 @@ const Login = () => {
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
       
-if(user){
-    navigate('/home') ;
-    navigate(from, { replace: true });
-}
+useEffect(()=>{
+    if(user){
+        navigate('/home') ;
+        navigate(from, { replace: true });
+    }
+},[user])
 if (sending) {
     return <Loading></Loading>;
   }

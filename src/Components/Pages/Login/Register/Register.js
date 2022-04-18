@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate, } from 'react-router-dom';
@@ -10,9 +10,9 @@ const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const[confirmPassword,setConfirmPassword]=useState('')
-    const[error1,setError1]=useState('');
+    const[error,setError]=useState('');
 
-   const [ createUserWithEmailAndPassword,user,loading,error]=useCreateUserWithEmailAndPassword(auth,{emailVerificationOptions:true});
+   const [ createUserWithEmailAndPassword,user,loading]=useCreateUserWithEmailAndPassword(auth,{emailVerificationOptions:true});
 
     const handleEmail =(event)=>{
       setEmail(event.target.value)
@@ -24,23 +24,29 @@ const Register = () => {
     setConfirmPassword(event.target.value)
 };
 const navigate=useNavigate();
+
+   useEffect(()=>{
+    if(user){
+        navigate("/")
+    }
+   },[user])
+
   if(loading){
      return<Loading></Loading> 
  }
- if(user){
-    navigate("/")
-}
+
+
 
   const registar = (event)=>{
       event.preventDefault();
-     createUserWithEmailAndPassword(email,password,confirmPassword);
      if(password!==confirmPassword){
-        setError1("Please Match Your Password With Confirmpassword");
+        setError("Please Match Your Password With Confirmpassword");
         return;
     }
     if(password.length<6){
-        setError1("Password must be atleast 6 charecter")
+        setError("Password must be atleast 6 charecter")
     }
+    createUserWithEmailAndPassword(email,password);
   }
     return (
         <div className='container w-50 mx-auto pb-5'>
@@ -59,6 +65,7 @@ const navigate=useNavigate();
                 <Form.Label>ConfirmPassword</Form.Label>
                 <Form.Control onBlur={handleConfirmPassword} type="password" placeholder="ConfirmPassword" required/>
             </Form.Group>
+            <p style={{color:"red"}}>{error}</p>
             <Button className='w-50 mx-auto d-block mb-2' variant="primary" type="submit">
                Register
             </Button>

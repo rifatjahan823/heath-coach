@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {Carousel } from 'react-bootstrap';
-import slider1bg from '../../../../Image/slide-1-bg.jpg';
-import slider1img from '../../../../Image/slide-1-img.png'
+import slider1bg from '../../../../Image/slide-1-bg.png';
 import slider2 from '../../../../Image/slider-2.jpg';
 import  './Banner.css';
 
@@ -21,17 +20,16 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-       <div className='d-flex'>
-       <div>
-           <img  style={{position:"absolute",bottom:"0%",left:"-50%",width:"85%"}} src={slider1img} alt="" />
-           </div>
-           <div style={{position:"absolute",left:"28%",marginTop:"-50%"}}>
+        <div>
+               <div className='mb-lg-5 pb-lg-3'>
                <h1>hi i'm rifat jahan </h1>
                <p>your new personal coach for better life!</p>
                <button>About me</button>
+               </div>
+               <div className='mb-lg-5 pb-lg-5 mb-md-5 pb-md-5 mb-sm-5'>
+
+               </div>
            </div>
-  
-       </div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item >
