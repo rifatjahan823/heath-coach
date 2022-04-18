@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Form} from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -28,6 +28,7 @@ const Login = () => {
       const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
       auth
       );
+     
       const submit = event=>{
         event.preventDefault();
         signInWithEmailAndPassword(email, password);
@@ -42,10 +43,11 @@ useEffect(()=>{
         navigate('/home') ;
         navigate(from, { replace: true });
     }
-},[user])
-if (sending) {
+},[user]);
+if(sending){
     return <Loading></Loading>;
   }
+
 
     return (
         <div className='container w-50 mx-auto pb-5 form-container'>

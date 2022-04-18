@@ -15,15 +15,16 @@ const SocialLogin = () => {
             <p>Error: {error?.message}</p>
           </div>
       }
-      useEffect(()=>{
+      if (loading ) {
+        return <Loading></Loading>;
+      };
+   
         if(user ){
           navigate ('/')
         }
-       },[user])
+      
        
-      if (loading ) {
-        return <Loading></Loading>;
-      }
+    
     
    
     return (
