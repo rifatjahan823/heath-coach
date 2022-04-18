@@ -29,6 +29,7 @@ const Footer = () => {
                         <Link className='text-decoration-none' to="/"> <li ><FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon> Home</li></Link>
                         <Link className='text-decoration-none' to="/about"> <li><FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon> About</li></Link>
                         <Link className='text-decoration-none' to="/blog"> <li ><FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon> Blog</li></Link>
+                        <Link className='text-decoration-none' to="/blog"> <li ><FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon> Service</li></Link>
                         </ul>
                     </div>
                 </div>

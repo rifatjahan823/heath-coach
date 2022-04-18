@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useParams } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import useService from '../../useHooks/useService';
 
 const CheckOut = () => {
     const [user]=useAuthState(auth)
@@ -24,10 +26,13 @@ const CheckOut = () => {
         const info={email,name,phone,address}
         console.log(info)
     }
-    
+    const {id} = useParams();
+
+
+
     return (
         <div className='container w-50 mx-auto pb-5 form-container'>
-        <h2 className='text-center  mt-2'>Please Login</h2>
+        <h2 className='text-center  mt-2'>Please Check Out</h2>
         <Form onSubmit={loginHandle}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Name</Form.Label>

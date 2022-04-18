@@ -11,6 +11,7 @@ import NotFound from './Components/Pages/NotFound/NotFound';
 import CheckOut from './Components/Pages/CheckOut/CheckOut';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import Footer from './Components/Pages/Shared/Footer/Footer';
+import Service from './Components/Pages/Service/Service';
 
 function App() {
   return (
@@ -18,8 +19,10 @@ function App() {
         <Header></Header>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/service" element={<Service />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog/>} />
+          <Route path="dynamicCheckout/:id" element={<CheckOut></CheckOut>}></Route>
           <Route path="/checkout" element={<RequireAuth>
             <CheckOut></CheckOut>
           </RequireAuth>} >
