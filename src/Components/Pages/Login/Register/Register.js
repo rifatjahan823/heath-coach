@@ -49,8 +49,8 @@ const navigate=useNavigate();
     createUserWithEmailAndPassword(email,password);
   }
     return (
-        <div className='container w-50 mx-auto pb-5'>
-        <h2 className='text-center text-primary mt-2'>Register</h2>
+        <div className='container w-50 mx-auto pb-5 form-container'>
+        <h2 className='text-center  mt-2'>Register</h2>
         <Form onSubmit={registar}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
@@ -66,7 +66,7 @@ const navigate=useNavigate();
                 <Form.Control onBlur={handleConfirmPassword} type="password" placeholder="ConfirmPassword" required/>
             </Form.Group>
             <p style={{color:"red"}}>{error}</p>
-            <Button className='w-50 mx-auto d-block mb-2' variant="primary" type="submit">
+            <Button className='w-50 mx-auto d-block mb-2' variant="success" type="submit">
                Register
             </Button>
         </Form>

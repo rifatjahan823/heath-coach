@@ -7,6 +7,7 @@ import auth from '../../../../firebase.init';
 import Loading from '../Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import 'react-toastify/dist/ReactToastify.css';
+import './Login.css'
 
 
 const Login = () => {
@@ -47,8 +48,8 @@ if (sending) {
   }
 
     return (
-        <div className='container w-50 mx-auto  pb-5'>
-        <h2 className='text-center text-primary mt-2'>Please Login</h2>
+        <div className='container w-50 mx-auto pb-5 form-container'>
+        <h2 className='text-center  mt-2'>Please Login</h2>
         <Form onSubmit={submit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
@@ -69,7 +70,7 @@ if (sending) {
             loading && <Loading></Loading>
             
         }
-            <Button className='w-50 mx-auto d-block mb-2' variant="primary" type="submit">
+            <Button className='w-50 mx-auto d-block mb-2' variant="success " type="submit">
                 Login
             </Button>
         </Form>
