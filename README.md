@@ -1,12 +1,11 @@
 # Health Coach
-[https://heath-coach.web.app/](https://heath-coach.web.app/)
+[Click me](https://heath-coach.web.app/)
 
 ##  Features and Functionality
-- Use React Libraries
-- use Recat Toast
-- Use Private Route for protect page
-- use react bootstrap
-- All Device Responsive
+- Home Page/Slider,Services,Info
+- servic Page/All Service
+- About Page/About me
+- Blog Page/Q&A
 
 ##  List of Technologies (frameworks, libraries)
 - React
