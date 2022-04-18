@@ -31,7 +31,7 @@ const CheckOut = () => {
 
 
     return (
-        <div className='container w-50 mx-auto pb-5 form-container'>
+        <div className='container mx-auto pb-5 form-container'style={{width:"50%"}}>
         <h2 className='text-center  mt-2'>Please Check Out</h2>
         <Form onSubmit={loginHandle}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -40,7 +40,7 @@ const CheckOut = () => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="Email" placeholder="Email"value={user?.email}  required/>
+                <Form.Control type="Email" readOnly placeholder="Email"value={user?.email}  required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Phone Number</Form.Label>
@@ -52,7 +52,7 @@ const CheckOut = () => {
                 <Form.Control onChange={ handleAddress} type="text" placeholder="Address" required/>
             </Form.Group>
          
-            <Button className='w-50 mx-auto d-block mb-2' variant="success " type="submit">
+            <Button  className='w-75 mx-auto d-block mb-2' variant="success " type="submit">
                 Check Out
             </Button>
         </Form>

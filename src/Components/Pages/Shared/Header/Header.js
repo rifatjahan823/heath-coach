@@ -19,7 +19,7 @@ const Header = () => {
          <Navbar.Brand as={Link} to="/" style={{width:"50%"}}>
         <img style={{width:"50%",marginTop:"-20px"}} src={logo} alt="" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav"style={{marginRight:"8%"}} />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"style={{marginRight:"4%"}} />
            <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
               <Nav.Link as={Link} to="/">Home</Nav.Link>

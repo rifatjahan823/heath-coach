@@ -27,7 +27,7 @@ const Banner = () => {
         <Carousel.Caption>
         <div>
                <div className='mb-lg-5 pb-lg-3'>
-               <h1>hi i'm rifat jahan </h1>
+               <h1 className='text-capitalize d-none d-md-block'>hi i'm rifat jahan </h1>
                <p>your new personal coach for better life!</p>
                <button onClick={aboutme}>About me</button>
                </div>
@@ -47,7 +47,7 @@ const Banner = () => {
         <Carousel.Caption>
             <div>
                <div className='mb-lg-5 pb-lg-3'>
-               <h1>hi i'm rifat jahan </h1>
+               <h1 className='text-capitalize d-none d-md-block'>hi i'm rifat jahan </h1>
                <p>your new personal coach for better life!</p>
                <button onClick={aboutme}>About me</button>
                </div>

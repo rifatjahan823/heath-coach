@@ -9,7 +9,7 @@ const AboutService = () => {
            <h2 className='mb-5'>Why people need a Health Coach</h2> 
            <img src={croppedfavicon} alt="" />
            <div className='row'>
-                <div className='col-lg-3 colo-md-6 col-sm-12'>
+                <div className='col-lg-3 col-md-6 col-sm-12'>
                     <div className='info-box'>
                     <FontAwesomeIcon className='icon' icon={faAppleAlt} />
                     <h3>Nutrition Strategies</h3>
@@ -19,7 +19,7 @@ const AboutService = () => {
                     </div>
                     </div>
                 </div>
-                <div className='col-lg-3 colo-md-6 col-sm-12'>
+                <div className='col-lg-3 col-md-6 col-sm-12'>
                     <div className='info-box'>
                         <FontAwesomeIcon className='icon' icon={faSocks}></FontAwesomeIcon>
                     <h3>Workout Routines</h3>
@@ -29,7 +29,7 @@ const AboutService = () => {
                     </div>
                     </div>
                 </div>
-                <div className='col-lg-3 colo-md-6 col-sm-12'>
+                <div className='col-lg-3 col-md-6 col-sm-12'>
                    <div className='info-box'>
                    <FontAwesomeIcon className='icon' icon={faHourglass} />
                    <h3>Individual Support</h3>
@@ -39,7 +39,7 @@ const AboutService = () => {
                    </div>
                    </div>
                 </div>
-                <div className='col-lg-3 colo-md-6 col-sm-12'>
+                <div className='col-lg-3 col-md-6 col-sm-12'>
                   <div className='info-box'>
                   <FontAwesomeIcon  className='icon' icon={faHeart } />
                   <h3>First-Hand Advice</h3>
