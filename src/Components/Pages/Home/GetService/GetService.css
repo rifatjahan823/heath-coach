@@ -2,7 +2,7 @@
     background-color: white;
     text-align: center;
     position: relative;
-    height: 540px;
+    height: 570px;
 }
 .services-info h5{
     color:#444444;
@@ -19,7 +19,7 @@
    bottom: 15px;
    border: 0;
    background-color: #2acd35;
-   padding: 10px 40px;
+   padding: 8px 30px;
    border-radius: 10px;
    color:white;
    font-size: 20px;

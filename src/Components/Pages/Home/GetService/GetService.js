@@ -13,7 +13,7 @@ const GetService = ({service}) => {
             <div className='services-info'>
                <img className='img-fluid mb-3 ' src= {picture} alt="" />
                 <h5 >{name}</h5>
-              <p>{description}</p>
+              <p className='py-2'>{description}</p>
                 <div className='services-btn'>
                 <button onClick={ checkOut}>Buy Now</button>
                 </div>

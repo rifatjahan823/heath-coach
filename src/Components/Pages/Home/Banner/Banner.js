@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {Carousel } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import slider1bg from '../../../../Image/slide-1-bg.png';
 import slider2 from '../../../../Image/slider-2.jpg';
 import  './Banner.css';
@@ -10,6 +11,10 @@ const Banner = () => {
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };
+    const navigate=useNavigate();
+    const aboutme = ()=>{
+      navigate('/about')
+    }
     return (
      <div>
         <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -24,7 +29,7 @@ const Banner = () => {
                <div className='mb-lg-5 pb-lg-3'>
                <h1>hi i'm rifat jahan </h1>
                <p>your new personal coach for better life!</p>
-               <button>About me</button>
+               <button onClick={aboutme}>About me</button>
                </div>
                <div className='mb-lg-5 pb-lg-5 mb-md-5 pb-md-5 mb-sm-5'>
 
@@ -44,7 +49,7 @@ const Banner = () => {
                <div className='mb-lg-5 pb-lg-3'>
                <h1>hi i'm rifat jahan </h1>
                <p>your new personal coach for better life!</p>
-               <button>About me</button>
+               <button onClick={aboutme}>About me</button>
                </div>
                <div className='mb-lg-5 pb-lg-5 mb-md-5 pb-md-5 mb-sm-5'>
 

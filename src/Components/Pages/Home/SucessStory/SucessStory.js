@@ -14,7 +14,7 @@ const SucessStory = () => {
            <div className='title-img' >
            <img className='mx-auto d-block' src={croppedfavicon} alt="" />
            </div>
-         <div className='row align-items-center g-5'>
+         <div className='row align-items-center g-4'>
             <div className='col-md-6 col-sm-12'>
               <div className='d-flex'>
               <div className='border p-3 mb-5'>

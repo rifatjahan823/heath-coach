@@ -1,0 +1,19 @@
+.about-btn1{
+    background-color: black;
+    padding: 5px 18px;
+    font-size: 15px;
+}
+.about-btn1:hover{
+    border: 2px solid #2acd35;
+}
+.about-btn2{
+    padding: 5px 18px;
+  border:2px solid #2acd35;  
+  color:#2acd35;
+  font-size: 15px;
+  margin-left:1%;
+}
+.about-btn2:hover{
+  background-color: black;
+    color:white;
+}
